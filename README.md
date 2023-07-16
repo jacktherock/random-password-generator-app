@@ -1,1 +1,1 @@
-# password-generator-app
+# random-password-generator-app
