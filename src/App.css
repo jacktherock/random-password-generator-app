@@ -1,0 +1,253 @@
+html {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/********* Whole Container ********************/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: #24232b;
+  padding: 24px;
+  width: 340px;
+}
+/***********************************************/
+
+/********* New Password Box ********************/
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gen_pass {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  word-wrap: break-word;
+  width: 90%;
+}
+/***********************************************/
+
+/********* Slider ******************************/
+
+.slide_container {
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin-top: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #2a8b8b 0%, #16161c 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.char_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.char_len {
+  font-size: 20px;
+  font-weight: 700;
+  color: #707070;
+}
+
+.char_num {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Fira Code;
+}
+/***********************************************/
+
+/********* Checkbox ****************************/
+
+.check_container {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* .check {
+  padding-bottom: 12px;
+} */
+
+.check_styles {
+  font-size: 16px;
+  font-weight: 700;
+  color: #707070;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #707070;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  margin: 0 20px 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+  background-color: #24232b;
+}
+
+.checkbox-label input[type="checkbox"]:checked:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #267c7c;
+  border-radius: 2px;
+}
+/***********************************************/
+
+/********* Strength Indicator ******************/
+
+.str_container {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+  background-color: #16161c;
+  padding: 16px 20px 16px 20px;
+  border-radius: 7px;
+  border: none;
+}
+
+.str_styles {
+  font-size: 16px;
+  font-weight: 700;
+  color: #707070;
+  text-transform: uppercase;
+}
+
+.poor_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.poor_styles {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Fira Code;
+}
+
+.red {
+  color: #ca5454;
+}
+
+.orange {
+  color: #e78b01;
+}
+
+.green {
+  color: #46924e;
+}
+/***********************************************/
+
+/********* Generate Button *********************/
+
+.gen_styles {
+  border: none;
+  border-radius: 7px;
+  padding: 12px 16px 12px 16px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2a8b8b;
+  text-transform: uppercase;
+}
+
+.gen_styles:hover {
+  cursor: pointer;
+  background-color: #267c7c;
+}
+/***********************************************/
+
+/********* Copy Icon ***************************/
+
+.material-symbols-outlined {
+  color: #707070;
+  background-color: transparent;
+  border: none;
+}
+
+.material-symbols-outlined:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+/***********************************************/
+
+/********* Error Message ***********************/
+
+.error {
+  color: #ffffff;
+  background-color: #f44336;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Fira Code;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/***********************************************/
